@@ -1,6 +1,6 @@
 # Matcha Vera Brand Concepts
 
-Static GitHub Pages-ready viewer for the four Matcha Vera logo and brand concept directions.
+Static GitHub Pages-ready viewer for the four Matcha Vera logo and brand concept directions. Each concept displays five visible assets: brand concept, box, bottle, main logo and vertical logo.
 
 Live URL placeholder:
 
@@ -27,7 +27,7 @@ http://127.0.0.1:3015
 - `index.html` - one-page brand concept viewer with four logo sections.
 - `styles.css` - responsive premium layout, sticky section nav and image lightbox styles.
 - `app.js` - small static lightbox interaction only.
-- `public/assets/brand-concepts/` - 24 local concept images referenced by relative paths.
+- `public/assets/brand-concepts/` - local concept images referenced by relative paths.
 
 ## Verification
 

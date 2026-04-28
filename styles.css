@@ -191,11 +191,32 @@ a {
 .asset-stack {
   display: grid;
   min-width: 0;
-  gap: 18px;
+  gap: clamp(18px, 3vw, 30px);
+}
+
+.asset-group {
+  min-width: 0;
+}
+
+.pair-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(14px, 2vw, 20px);
+  align-items: stretch;
+}
+
+.product-pair {
+  padding-top: clamp(4px, 1vw, 10px);
+}
+
+.logo-pair {
+  padding-top: clamp(4px, 1vw, 12px);
+  border-top: 1px solid rgba(23, 22, 20, 0.12);
 }
 
 .asset-card {
   display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
   gap: 10px;
   min-width: 0;
   padding: clamp(10px, 2vw, 16px);
@@ -206,6 +227,7 @@ a {
 
 .hero-card {
   padding: clamp(12px, 2.4vw, 20px);
+  background: rgba(255, 253, 248, 0.9);
 }
 
 .asset-label {
@@ -215,6 +237,7 @@ a {
 .image-button {
   display: block;
   width: 100%;
+  min-height: 0;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -235,6 +258,20 @@ a {
 
 .hero-card .image-button {
   background: #f3efe6;
+}
+
+.pair-grid .image-button {
+  height: 100%;
+}
+
+.pair-grid .image-button img {
+  height: 100%;
+  object-fit: contain;
+  background: #fbf7ee;
+}
+
+.logo-pair .image-button img {
+  object-fit: contain;
 }
 
 .lightbox {
@@ -304,5 +341,9 @@ a {
 
   .app-shell {
     padding-top: 24px;
+  }
+
+  .pair-grid {
+    grid-template-columns: 1fr;
   }
 }
